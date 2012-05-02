@@ -1,0 +1,19 @@
+zonenofity is usefull to send a NS_NOTIFY packet to BIND slave server.
+When you update a zone in your djbdns DNS you must notify the slaves
+about you change.
+
+INSTALLATION
+============
+
+tar xfz zonenotify<version>.tar.gz
+cd zonenotify
+make install strip
+
+USAGE
+=====
+
+./zonenotify zone slave1 [slave2] [... slaveN]
+
+this send a "NOTIFY" packet to slave1 (slave2...slaveN) about zone
+"zone", if there are some problem zonenofity display the error message
+and exit 1, otherwise exit 0.

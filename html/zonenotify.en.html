@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>zonenotify</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <meta name="description" content="Luca Morettoni, software and internet consulting">
+  <meta name="keywords" content="internet,software,sviluppo,unix,freebsd,bsd,linux,qmail,djbdns,tinydns,c,php,opensource,italia">
+  <meta name="author" content="Luca Morettoni">
+  <meta name="robots" content="all">
+  <meta name="rating" content="general">
+ </head>
+ <body>
+  <a href="index.html">Luca Morettoni</a><br>
+  <a href="zonenotify.html">Versione Italiana</a>
+  <h1>zonenotify</h1>
+  <tt>zonenotify</tt> is usefull to send a <tt>NS_NOTIFY</tt> packet to BIND slave server.
+  When you update a zone in your djbdns DNS you must notify the slaves
+  about you change.
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+Support this project:
+<input type="image" src="https://www.paypal.com/it_IT/i/btn/x-click-but04.gif" border="0" name="submit" alt="Effettua i tuoi pagamenti con PayPal.  un sistema rapido, gratuito e sicuro.">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+</form>
+  <h2>Installation</h2>
+  Download the package <a href="bsd/zonenotify-0.1.tar.gz">zonenotify-0.1.tar.gz</a> (Perugia, Italy)
+   - <a href="http://cvs.delink.net/mirrors/morettoni.net/zonenotify-0.1.tar.gz">zonenotify-0.1.tar.gz</a> (Cleveland, Ohio, USA)
+  <p>
+  Compile it with:
+<pre>
+    tar -xfz zonenotify-[version].tar.gz
+    cd zonenotify
+    make
+</pre>
+  Install it as <tt>root</tt>:
+<pre>
+    make install strip
+</pre>
+  <h2>Use</h2>
+<pre>
+    zonenotify zone slave1 [slave2] [... slaveN]
+</pre>
+  this send a &quot;<tt>NOTIFY</tt>&quot; packet to <tt>slave1</tt> (<tt>slave2...slaveN</tt>) about zone
+  &quot;<tt>zone</tt>&quot;, if there are some problem zonenotify display the error message
+  and exit 1, otherwise exit 0.
+  <h2>Thanks</h2>
+  <ul>
+   <li>Cristiano Deana <tt>&lt;cris AT gufi DOT org&gt;</tt> for the BIND slave server used for testing;
+   <li>Valerio Felici <tt>&lt;valerio AT bgweb DOT it&gt;</tt> for tests on Windows server;
+   <li>Brian T Glenn <tt>&lt;glenn AT delink DOT net&gt;</tt> for the disk space at USA mirror;
+   <li>Everybody download, check, debug and use the package!
+  </ul>
+ </body>
+</html>
